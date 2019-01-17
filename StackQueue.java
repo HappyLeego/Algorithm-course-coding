@@ -12,9 +12,10 @@ public class StackQueue {
 	
 	public Integer outQueue() throws Exception{
 		dao();
-		if(popStack.isEmpty()){
+		if(popStack.isEmpty()&&pushStack.isempty()){
 			throw new Exception("The queue is empty");
 		}
+		dao();
 		return popStack.pop();
 	}
 	
